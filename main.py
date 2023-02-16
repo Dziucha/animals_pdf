@@ -20,6 +20,6 @@ for filepath in filepaths:
         animal_info = file_local.readlines()
 
     pdf.set_font(family="Times", size=10)
-    pdf.multi_cell(w=0, h=8, txt=animal_info[0], align="L", border=1)
+    pdf.multi_cell(w=0, h=8, txt=animal_info[0], align="L")
 
 pdf.output("animals_info.pdf")
